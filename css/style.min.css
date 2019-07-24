@@ -585,9 +585,9 @@ a:hover {
 
 .probootstrap-section.probootstrap-section-colored,
 .probootstrap-section.probootstrap-section-dark {
-	background: #f54ea2;
-	background: -webkit-gradient(linear, left top, right top, from(#f54ea2), to(#ff7676));
-	background: linear-gradient(to right, #f54ea2 0, #ff7676 100%);
+	background: #3333CC;
+	background: -webkit-gradient(linear, left top, right top, from(#3333CC), to(#e6ac00));
+	background: linear-gradient(to right, #666699 0, #737373 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$firstcolor, endColorstr=$secondcolor, GradientType=1)
 }
 
@@ -607,7 +607,7 @@ a:hover {
 .probootstrap-section.probootstrap-section-colored .heading-with-icon i,
 .probootstrap-section.probootstrap-section-dark .heading-with-icon,
 .probootstrap-section.probootstrap-section-dark .heading-with-icon i {
-	color: #ff7676
+	color: #e6ac00
 }
 
 .probootstrap-section.probootstrap-section-colored p,
