@@ -1,24 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NBA_Prediction</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    
 
-	<head>
-		<meta charset="utf-8">
-		
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+    
 		<center>
+			
+		<table class='probootstrap table'>
+			
 		<div id="container" style="width: 1000px;height:800px;"></div>
+		</table>	
 		<div id="container_2" style="width: 1000px;height:800px;"></div>
 		
 		<div id="container_3" style="width: 1000px;height:800px;"></div>
 		<div id="container_4" style="width: 1000px;height:800px;"></div>
 		<div id="container_5" style="width: 1000px;height:800px;"></div>
+		<div><button class="probootstrap btn-default"><a href='index.html'>Back</a></button></div>
 		</center>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+		<script src="code/jquery-1.8.min.js"></script>
 		<script src="code/highcharts.js"></script>
 		
-		<title> Highcharts 图表展示</title>
+	
 	</head>
 
 	<body>
+		
+		
+	
+  
+		
+		
+		
 		
 	
 		<script>
@@ -191,45 +217,7 @@ $.get('./data/Rookie_Prediction.csv', function(data) {
             options_points.series.push(series);
       }
         
-        
-        
-        
-           //Assists 处理
-         // 处理第一行，即分类
-        if (lineNo == 0) {
-            $.each(items, function(itemNo, item) {
-            	             if (itemNo == 2) {
-                 options_ast.xAxis.categories.push('');
-              }
-          });
-                }
-
-        // 处理其他的每一行
-      else {
-      	
-      		var a = []
-            var series = {
-            	names: [],
-                data: []
-            };
-            $.each(items, function(itemNo, item) {
-                if (itemNo == 0) {
-                    series.name = item;   // 数据列的名字
-                } else {
-                	if(itemNo==2){
-                    series.data.push(parseFloat(item));
-                    
-                    }// 数据，记得转换成数值类型
-                }
-            });
-            // 最后将数据 push 到数据列配置里
-            //alert(a)
-        
-            options_ast.series.push(series);
-      }
-        
-        
-      //Blocks 处理
+             //Asts 处理
          // 处理第一行，即分类
         if (lineNo == 0) {
             $.each(items, function(itemNo, item) {
@@ -262,8 +250,7 @@ $.get('./data/Rookie_Prediction.csv', function(data) {
         
             options_ast.series.push(series);
       }      
-        
-        
+             
         
         //Steals 处理
          // 处理第一行，即分类
@@ -354,6 +341,11 @@ $.get('./data/Rookie_Prediction.csv', function(data) {
 			
 			
 		</script>	
+    
+     <script src="js/scripts.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="js/custom.js"></script>
+    
     
 	</body>
 

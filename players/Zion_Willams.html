@@ -1,161 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NBA_Prediction</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet"> 
-    <link rel="stylesheet" href="../css/styles-merged.css">
-    <link rel="stylesheet" href="../css/style.min.css">
-    <link rel="stylesheet" href="../css/custom.css">
-    <div id="container_5" style="width: 1000px;height:800px;"></div>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-		<script src="../code/highcharts.js"></script>
-	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>NBA_Prediction</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
 
-    <!--[if lt IE 9]>
+		<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+		<link rel="stylesheet" href="../css/styles-merged.css">
+		<link rel="stylesheet" href="../css/style.min.css">
+		<link rel="stylesheet" href="../css/custom.css">
+		<div id="container_5" style="width: 1000px;height:800px;"></div>
+		<script src="../code/jquery-1.8.min.js"></script>
+		<script src="../code/highcharts.js"></script>
+
+
+		<!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.min.js"></script>
       <script src="js/vendor/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-  	
-<!-- START: header -->
-  <header role="banner" class="probootstrap-header">
-    <div class="container-fluid">
-        <a href="index.html" class="probootstrap-logo">Nba Prediction<span>.</span></a>
-        
-        <a href="#" class="probootstrap-burger-menu visible-xs" ><i>Menu</i></a>
-        <div class="mobile-menu-overlay"></div>
+	</head>
+	<body>
 
-        <nav role="navigation" class="probootstrap-nav hidden-xs">
-          <ul class="probootstrap-main-nav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Prediction</a></li>
-            <li><a href="products.html">Workflow</a></li>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-          <div class="extra-text visible-xs">
-            <a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
-            <h5>Social</h5>
-            <ul class="social-buttons">
-              <li><a href="#"><i class="icon-twitter"></i></a></li>
-              <li><a href="#"><i class="icon-facebook"></i></a></li>
-              <li><a href="#"><i class="icon-instagram2"></i></a></li>
-            </ul>
-            <p><small>&copy; Copyright 2019. All Rights Reserved.</small></p>
-          </div>
-        </nav>
-    </div>
-  </header>
-  <!-- END: header -->
-  	
- 
-  	<div id="container" style="min-width: 400px; max-width: 600px; height: 400px; margin: 0 auto"></div>
- <script>	
-var chart = Highcharts.chart('container', {
-	chart: {
-		polar: true,
-		type: 'line'
-	},
-	title: {
-		text: 'Zion Williamson',
-		x: -80
-	},
-	pane: {
-		size: '80%'
-	},
-	xAxis: {
-		categories: ['Ponits', 'Assists', 'Block', 'Rebound',
-					 'Steals', 'Value'],
-		tickmarkPlacement: 'on',
-		lineWidth: 0
-	},
-	yAxis: {
-		gridLineInterpolation: 'polygon',
-		lineWidth: 0,
-		min: 0
-	},
-	tooltip: {
-		shared: true,
-		pointFormat: '<span style="color:{series.color}">{series.name}: <b>${point.y:,.0f}</b><br/>'
-	},
-	legend: {
-		align: 'right',
-		verticalAlign: 'top',
-		y: 70,
-		layout: 'vertical'
-	},
-	series: [{
-		name: 'Zion Williamson',
-		data: [14.48, 2.76, 0.7, 6.7, 1.28, 32.6],
-		pointPlacement: 'on'
-	}, {
-		name: 'Average',
-		data: [6.16617, 1.19617, 0.33617, 2.71723, 0.49021277, 13.6923404],
-		pointPlacement: 'on'
-	}]
-});
- </script>
- 
-<section id="next-section">
-	
-	<!--    -->
-    <div class="container-fluid">
-      <div class="row probootstrap-gutter0">
-        <div class="col-md-6 col-sm-6">
-          <a href="mvp.html" class="probootstrap-hover-overlay">
-            <img src="img/all_Star.jpg" alt="Free Bootstrap Template " class="img-responsive">
-            <div class="probootstrap-text-overlay">
-              <h3>NBA 2019-2020 MVP Prediction</h3>
-              <p>Introduction</p>
-            </div>
-          </a>
-        </div>
-       
-        <div class="col-md-6 col-sm-6">
-          <a href="rookie_2.html" class="probootstrap-hover-overlay">
-            <img src="img/Rookie.jpg" alt="Free Bootstrap Template " class="img-responsive">
-            <div class="probootstrap-text-overlay">
-              <h3>NBA 2019-2020 Rookie Performance Prediction</h3>
-              <p>Introduction</p>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-6 col-sm-6">
-          <a href="nba_draft2019.html" class="probootstrap-hover-overlay">
-            <img src="img/draft.jpg" alt="Free Bootstrap Template " class="img-responsive">
-            <div class="probootstrap-text-overlay">
-              <h3>NBA 2018-2019 Draft Prediction</h3>
-              <p>Introduction</p>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-6 col-sm-6">
-          <a href="portfolio-single.html" class="probootstrap-hover-overlay">
-            <img src="img/money.jpg" alt="Free Bootstrap Template " class="img-responsive">
-            <div class="probootstrap-text-overlay">
-              <h3>NBA 2019-2020 Players' Salary Prediction</h3>
-              <p>Introduction</p>
-            </div>
-          </a>
-        </div>
-        
-        
-      </div>
-    </div><div class="tlinks">Our data were collected from <a href="https://www.basketball-reference.com/"  title="basketball-reference">NBA_Prediction</a></div>
-  </section>
+		<!-- START: header -->
+		<header role="banner" class="probootstrap-header">
+			<div class="container-fluid">
+				<a href="index.html" class="probootstrap-logo">Nba Prediction<span>.</span></a>
+
+				<a href="#" class="probootstrap-burger-menu visible-xs"><i>Menu</i></a>
+				<div class="mobile-menu-overlay"></div>
+
+				<nav role="navigation" class="probootstrap-nav hidden-xs">
+					<ul class="probootstrap-main-nav">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="portfolio.html">Prediction</a></li>
+						<li><a href="products.html">Workflow</a></li>
+						<li><a href="about.html">About us</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+					<div class="extra-text visible-xs">
+						<a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
+						<h5>Social</h5>
+						<ul class="social-buttons">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-instagram2"></i></a></li>
+						</ul>
+						<p><small>&copy; Copyright 2019. All Rights Reserved.</small></p>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!-- END: header -->
 
 
+		<div id="container" style="min-width: 400px; max-width: 600px; height: 400px; margin: 0 auto"></div>
+		<script>
+			var chart = Highcharts.chart('container', {
+				chart: {
+					polar: true,
+					type: 'line'
+				},
+				title: {
+					text: 'Zion Williamson',
+					x: -80
+				},
+				pane: {
+					size: '80%'
+				},
+				xAxis: {
+					categories: ['Ponits', 'Assists', 'Block', 'Rebound',
+						'Steals', 'Value'
+					],
+					tickmarkPlacement: 'on',
+					lineWidth: 0
+				},
+				yAxis: {
+					gridLineInterpolation: 'polygon',
+					lineWidth: 0,
+					min: 0
+				},
+				tooltip: {
+					shared: true,
+					pointFormat: '<span style="color:{series.color}">{series.name}: <b>${point.y:,.0f}</b><br/>'
+				},
+				legend: {
+					align: 'right',
+					verticalAlign: 'top',
+					y: 70,
+					layout: 'vertical'
+				},
+				series: [{
+					name: 'Zion Williamson',
+					data: [14.48, 2.76, 0.7, 6.7, 1.28, 32.6],
+					pointPlacement: 'on'
+				}, {
+					name: 'Average',
+					data: [6.16617, 1.19617, 0.33617, 2.71723, 0.49021277, 13.6923404],
+					pointPlacement: 'on'
+				}]
+			});
+		</script>
+
+		<section id="next-section">
+
+			<!--    -->
+			<div class="container-fluid">
+				<div class="row probootstrap-gutter0">
+					<div class="col-md-6 col-sm-6">
+						<a href="mvp.html" class="probootstrap-hover-overlay">
+							<img src="img/all_Star.jpg" alt="Free Bootstrap Template " class="img-responsive">
+							<div class="probootstrap-text-overlay">
+								<h3>NBA 2019-2020 MVP Prediction</h3>
+								<p>Introduction</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+						<a href="rookie_2.html" class="probootstrap-hover-overlay">
+							<img src="img/Rookie.jpg" alt="Free Bootstrap Template " class="img-responsive">
+							<div class="probootstrap-text-overlay">
+								<h3>NBA 2019-2020 Rookie Performance Prediction</h3>
+								<p>Introduction</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<a href="nba_draft2019.html" class="probootstrap-hover-overlay">
+							<img src="img/draft.jpg" alt="Free Bootstrap Template " class="img-responsive">
+							<div class="probootstrap-text-overlay">
+								<h3>NBA 2018-2019 Draft Prediction</h3>
+								<p>Introduction</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<a href="portfolio-single.html" class="probootstrap-hover-overlay">
+							<img src="img/money.jpg" alt="Free Bootstrap Template " class="img-responsive">
+							<div class="probootstrap-text-overlay">
+								<h3>NBA 2019-2020 Players' Salary Prediction</h3>
+								<p>Introduction</p>
+							</div>
+						</a>
+					</div>
 
 
-  <script src="js/scripts.min.js"></script>
-  <script src="js/main.min.js"></script>
-  <script src="js/custom.js"></script>
+				</div>
+			</div>
+			<div class="tlinks">Our data were collected from <a href="https://www.basketball-reference.com/" title="basketball-reference">NBA_Prediction</a></div>
+		</section>
 
-  </body>
+
+
+
+		<script src="js/scripts.min.js"></script>
+		<script src="js/main.min.js"></script>
+		<script src="js/custom.js"></script>
+
+	</body>
 </html>
